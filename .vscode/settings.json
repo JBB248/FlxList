@@ -3,12 +3,24 @@
 		"export/**/*.*": true
 	},
 	"[haxe]": {
+		// Keep source files formatted
 		"editor.formatOnSave": false,
-		"editor.formatOnSaveMode":"modifications",
 		"editor.formatOnPaste": false,
 		"editor.codeActionsOnSave": {
-			"source.sortImports": "explicit"
-		}
+			"source.organizeImports": "never"
+		},
+		"editor.defaultFormatter": "nadako.vshaxe",
+		"editor.tabSize": 4
 	},
-	"haxe.enableExtendedIndentation": true
+	"[json]": {
+		// Keep data files formatted
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+
+	// Keep all files consistent
+	"files.insertFinalNewline": true,
+  	"files.trimFinalNewlines": false,
+  	"files.trimTrailingWhitespace": true
 }

@@ -3,7 +3,7 @@
 ## Building
 <ol>
     <li>Download <a href="https://haxe.org/download/version/4.2.5/">Haxe 4.2.5</a></li>
-    <li>Download <a href="git-scm.com">Git</a> </li>
+    <li>Download <a href="git-scm.com">Git</a> and clone this repository using <code>https://github.com/jbb248/FlxList.git</code></li>
     <li>Use <code>haxelib install [library]</code> to download the following:</li>
         <ul>
             <li>lime 8.1.3</li>
