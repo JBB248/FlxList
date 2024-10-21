@@ -4,12 +4,8 @@
 <ol>
     <li>Download <a href="https://haxe.org/download/version/4.2.5/">Haxe 4.2.5</a></li>
     <li>Download <a href="git-scm.com">Git</a> and clone this repository using <code>https://github.com/jbb248/FlxList.git</code></li>
-    <li>Use <code>haxelib install [library]</code> to download the following:</li>
-        <ul>
-            <li>lime 8.1.3</li>
-            <li>openfl 9.3.4</li>
-            <li>flixel 5.8.0</li>
-        </ul>
+    <li>Run <code>haxelib --global install hmm</code> and then <code>haxelib --global run hmm setup</code></li>
+    <li>Run <code>hmm install</code> to install the haxelib dependencies</li>
     <li>Run <code>haxelib run lime setup flixel</code> and <code>haxelib run lime setup</code> and <code>haxelib run flixel-tools setup</code></li>
     <li>
         Configure Lime for Android
