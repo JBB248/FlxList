@@ -2,7 +2,7 @@
 
 ## Building
 <ol>
-    <li>Download <a href="https://haxe.org/download/version/4.2.5/">Haxe 4.2.5</a></li>
+    <li>Download <a href="https://haxe.org/download/version/4.3.6/">Haxe 4.3.6</a></li>
     <li>Download <a href="git-scm.com">Git</a> and clone this repository using <code>https://github.com/jbb248/FlxList.git</code></li>
     <li>Run <code>haxelib --global install hmm</code> and then <code>haxelib --global run hmm setup</code></li>
     <li>Run <code>hmm install</code> to install the haxelib dependencies</li>
