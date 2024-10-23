@@ -84,7 +84,8 @@
 		{
 			"props": {
 				"lineStyle": "onestar",
-				"startStyle": "twostars"
+				"startStyle": "twostars",
+				"severity": "IGNORE"
 			},
 			"type": "DocCommentStyle"
 		},
@@ -137,23 +138,16 @@
 				"requireReturn": false,
 				"ignoreOverride": true,
 				"tokens": [
-					"ABSTRACT_DEF",
-					"CLASS_DEF",
-					"ENUM_DEF",
-					"INTERFACE_DEF",
-					"TYPEDEF_DEF"
+					"CLASS_DEF"
 				],
 				"modifier": "PRIVATE",
 				"excludeNames": [
 					"new",
 					"toString"
-				]
+				],
+				"severity": "IGNORE"
 			},
 			"type": "FieldDocComment"
-		},
-		{
-			"props": {},
-			"type": "FileNameCase"
 		},
 		{
 			"props": {},
@@ -169,7 +163,7 @@
 		},
 		{
 			"props": {
-				"character": "    ",
+				"character": "tab",
 				"wrapPolicy": "exact",
 				"ignoreComments": true,
 				"ignoreConditionals": false,
@@ -179,7 +173,7 @@
 		},
 		{
 			"props": {
-				"character": "space",
+				"character": "tab",
 				"ignorePattern": "^$"
 			},
 			"type": "IndentationCharacter"
@@ -411,11 +405,11 @@
 		{
 			"props": {
 				"spaceIfCondition": "should_not",
-				"spaceAroundBinop": false,
+				"spaceAroundBinop": true,
 				"spaceForLoop": "should_not",
 				"ignoreRangeOperator": true,
-				"spaceWhileLoop": "any",
-				"spaceCatch": "any",
+				"spaceWhileLoop": "should_not",
+				"spaceCatch": "should_not",
 				"spaceSwitchCase": "should_not",
 				"noSpaceAroundUnop": false
 			},
@@ -439,7 +433,9 @@
 			"type": "Trace"
 		},
 		{
-			"props": {},
+			"props": {
+				"severity": "IGNORE"
+			},
 			"type": "TrailingWhitespace"
 		},
 		{
@@ -451,12 +447,9 @@
 		{
 			"props": {
 				"tokens": [
-					"ABSTRACT_DEF",
-					"CLASS_DEF",
-					"ENUM_DEF",
-					"INTERFACE_DEF",
-					"TYPEDEF_DEF"
-				]
+					"CLASS_DEF"
+				],
+				"severity": "INFO"
 			},
 			"type": "TypeDocComment"
 		},
@@ -476,5 +469,5 @@
 			"type": "UnusedLocalVar"
 		}
 	],
-	"numberOfCheckerThreads": 5
+	"numberOfCheckerThreads": 4
 }
